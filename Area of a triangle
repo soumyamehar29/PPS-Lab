@@ -1,0 +1,6 @@
+Aim: Write a Python program to print the area of a triangle.
+
+Base= float(input("Base: "))
+Height= float(input("Height: "))
+area= 0.5 * Base * Height
+print("Area: %0.2f" %area)
