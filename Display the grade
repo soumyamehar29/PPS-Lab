@@ -1,0 +1,28 @@
+Aim: Write a Python program to calculate the average marks for 5 subjects. The program should prompt the user to input the marks for each subject. After receiving the input, it should compute the average marks and then determine the corresponding grade based on the following grading system:
+A: 90 - 100
+B: 80 - 89
+C: 70 - 79
+D: 60 - 69
+F: Below 60
+
+m1= float(input('subject 1: '))
+m2= float(input('subject 2: '))
+m3= float(input('subject 3: '))
+m4= float(input('subject 4: '))
+m5= float(input('subject 5: '))
+
+S= m1+m2+m3+m4+m5
+Avg= S/5
+
+print(f'Average Marks: {Avg:.2f}')
+
+if Avg>=90 and 100>=Avg:
+	print('Grade: A')
+elif Avg>=80 and 89>=Avg:
+	print('Grade: B')
+elif Avg>=70 and 79>=Avg:
+	print('Grade: C')
+elif Avg>=60 and 69>=Avg:
+	print('Grade: D')
+else:
+	print('Grade: F')
